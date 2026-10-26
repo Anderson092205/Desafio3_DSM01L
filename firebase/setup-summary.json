@@ -1,0 +1,15 @@
+{
+  "configuredOn": "2026-10-24",
+  "projectId": "desafio3-lecturas-261024-aem",
+  "projectNumber": "339164706953",
+  "displayName": "Mis Lecturas - Desafio 3",
+  "androidPackage": "com.example.desafio3",
+  "androidAppId": "1:339164706953:android:8a1252820cba58be222e58",
+  "emailPasswordEnabled": true,
+  "databaseUrl": "https://desafio3-lecturas-261024-aem-default-rtdb.firebaseio.com",
+  "databaseRegion": "us-central1",
+  "databaseRulesPublished": true,
+  "billingEnabled": false,
+  "hasBillingAccount": false,
+  "otherProjectsModified": false
+}

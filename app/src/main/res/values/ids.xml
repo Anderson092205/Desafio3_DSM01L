@@ -1,0 +1,19 @@
+<resources>
+    <item name="email" type="id" />
+    <item name="password" type="id" />
+    <item name="confirmation" type="id" />
+    <item name="auth_submit" type="id" />
+    <item name="auth_toggle" type="id" />
+    <item name="title_input" type="id" />
+    <item name="author_input" type="id" />
+    <item name="total_pages_input" type="id" />
+    <item name="pages_read_input" type="id" />
+    <item name="genre_spinner" type="id" />
+    <item name="status_spinner" type="id" />
+    <item name="rating_bar" type="id" />
+    <item name="save_book" type="id" />
+    <item name="add_book" type="id" />
+    <item name="logout" type="id" />
+    <item name="goal_input" type="id" />
+    <item name="edit_goal" type="id" />
+</resources>

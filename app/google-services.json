@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "339164706953",
+    "firebase_url": "https://desafio3-lecturas-261024-aem-default-rtdb.firebaseio.com",
+    "project_id": "desafio3-lecturas-261024-aem",
+    "storage_bucket": "desafio3-lecturas-261024-aem.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339164706953:android:8a1252820cba58be222e58",
+        "android_client_info": {
+          "package_name": "com.example.desafio3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ3gfe2n0_shqX49t3KSasPxqxU5lf3fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

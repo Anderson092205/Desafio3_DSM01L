@@ -1,0 +1,17 @@
+{
+  "database": {
+    "instance": "desafio3-lecturas-261024-aem-default-rtdb",
+    "rules": "firebase/database.rules.json"
+  },
+  "auth": {
+    "providers": {
+      "emailPassword": true
+    }
+  },
+  "emulators": {
+    "auth": { "port": 9099 },
+    "database": { "port": 9000 },
+    "ui": { "enabled": false },
+    "singleProjectMode": true
+  }
+}

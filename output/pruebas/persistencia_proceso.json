@@ -1,0 +1,13 @@
+{
+  "resultado": "APROBADO",
+  "tipo": "Proceso detenido con adb am force-stop y nueva instrumentación",
+  "primerUid": "ONv5jt6KApaixuCUgSe8j5WXhaa2",
+  "primeraCuenta": "lector.prueba.1792880421111@example.com",
+  "uidRestaurado": true,
+  "bibliotecaRecuperada": true,
+  "metaRecuperada": true,
+  "capturas": [
+    "18_reinicio_proceso_inicio.png",
+    "19_reinicio_proceso_biblioteca.png"
+  ]
+}

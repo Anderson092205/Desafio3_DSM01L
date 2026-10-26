@@ -1,0 +1,16 @@
+{
+  "application": "Entre páginas",
+  "package": "com.example.desafio3",
+  "apk": "output/apk/EntrePaginas-debug.apk",
+  "sha256": "D073449F1F9D55D38FBFA5042D68133F8E74F7FDEB29F5EE5B952A3708560E9D",
+  "compilation": "APROBADO",
+  "lintErrors": 0,
+  "lintWarnings": 14,
+  "unitTests": 19,
+  "unitFailures": 0,
+  "androidGradlePlugin": "9.1.1",
+  "compileSdk": "37.1",
+  "targetSdk": 36,
+  "minSdk": 24,
+  "firebaseBom": "34.4.0"
+}

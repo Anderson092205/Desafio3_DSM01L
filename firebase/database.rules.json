@@ -1,0 +1,35 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+        "books": {
+          "$bookId": {
+            ".validate": "newData.hasChildren(['id', 'title', 'author', 'genre', 'totalPages', 'pagesRead', 'status', 'rating', 'finishedAt', 'createdAt', 'updatedAt'])",
+            "id": { ".validate": "newData.isString() && newData.val() === $bookId" },
+            "title": { ".validate": "newData.isString() && newData.val().length >= 2 && newData.val().length <= 60 && newData.val().matches(/.*\\S.*/)" },
+            "author": { ".validate": "newData.isString() && newData.val().length >= 2 && newData.val().length <= 60 && newData.val().matches(/.*\\S.*/)" },
+            "genre": { ".validate": "newData.val() === 'Novela' || newData.val() === 'Ciencia ficción' || newData.val() === 'Historia' || newData.val() === 'Desarrollo personal'" },
+            "totalPages": { ".validate": "newData.isNumber() && newData.val() > 0 && newData.val() <= 2147483647 && newData.val() % 1 === 0" },
+            "pagesRead": { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= newData.parent().child('totalPages').val() && newData.val() % 1 === 0" },
+            "status": { ".validate": "newData.val() === 'Por leer' || newData.val() === 'Leyendo' || newData.val() === 'Terminado'" },
+            "rating": { ".validate": "newData.isNumber() && newData.val() % 1 === 0 && ((newData.parent().child('status').val() === 'Terminado' && newData.val() >= 1 && newData.val() <= 5) || (newData.parent().child('status').val() !== 'Terminado' && newData.val() === 0))" },
+            "finishedAt": { ".validate": "newData.isNumber() && newData.val() % 1 === 0 && ((newData.parent().child('status').val() === 'Terminado' && newData.val() > 0) || (newData.parent().child('status').val() !== 'Terminado' && newData.val() === 0))" },
+            "createdAt": { ".validate": "newData.isNumber() && newData.val() > 0 && newData.val() % 1 === 0" },
+            "updatedAt": { ".validate": "newData.isNumber() && newData.val() >= newData.parent().child('createdAt').val() && newData.val() % 1 === 0" },
+            "$other": { ".validate": false }
+          }
+        },
+        "goals": {
+          "$year": {
+            ".validate": "$year.matches(/^[0-9]{4}$/) && newData.isNumber() && newData.val() > 0 && newData.val() <= 2147483647 && newData.val() % 1 === 0"
+          }
+        },
+        "$other": { ".validate": false }
+      }
+    }
+  }
+}

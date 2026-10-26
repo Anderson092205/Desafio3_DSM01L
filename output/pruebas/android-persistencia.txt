@@ -1,0 +1,8 @@
+
+com.example.desafio3.ReadingFlowTest:.
+
+Time: 7.475
+
+OK (1 test)
+
+

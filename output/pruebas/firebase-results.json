@@ -1,0 +1,107 @@
+{
+  "testedAt": "2026-10-24T21:45:04.760Z",
+  "projectId": "desafio3-lecturas-261024-aem",
+  "environment": "Firebase remoto real (Authentication y Realtime Database)",
+  "results": [
+    {
+      "name": "Registro Firebase cuenta 1",
+      "expected": "HTTP 200",
+      "observed": "HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Registro Firebase cuenta 2",
+      "expected": "HTTP 200",
+      "observed": "HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Inicio de sesión con correo y contraseña",
+      "expected": "HTTP 200",
+      "observed": "HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Contraseña incorrecta rechazada",
+      "expected": "HTTP 400",
+      "observed": "HTTP 400",
+      "passed": true
+    },
+    {
+      "name": "Guardar libro en Realtime Database",
+      "expected": "HTTP 200",
+      "observed": "HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Recuperar libro y progreso persistidos",
+      "expected": "30 páginas, 25%",
+      "observed": "30 páginas",
+      "passed": true
+    },
+    {
+      "name": "Guardar meta anual positiva",
+      "expected": "HTTP 200",
+      "observed": "HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Rechazar meta anual cero",
+      "expected": "HTTP 401",
+      "observed": "HTTP 401",
+      "passed": true
+    },
+    {
+      "name": "Rechazar progreso mayor al total",
+      "expected": "HTTP 401",
+      "observed": "HTTP 401",
+      "passed": true
+    },
+    {
+      "name": "Rechazar terminado sin calificación",
+      "expected": "HTTP 401",
+      "observed": "HTTP 401",
+      "passed": true
+    },
+    {
+      "name": "Actualizar libro terminado con fecha y estrellas",
+      "expected": "HTTP 200",
+      "observed": "HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Aislamiento: otro usuario no puede leer datos",
+      "expected": "HTTP 401",
+      "observed": "HTTP 401",
+      "passed": true
+    },
+    {
+      "name": "Aislamiento: otro usuario no puede modificar meta",
+      "expected": "HTTP 401",
+      "observed": "HTTP 401",
+      "passed": true
+    },
+    {
+      "name": "Datos inaccesibles sin autenticación",
+      "expected": "HTTP 401",
+      "observed": "HTTP 401",
+      "passed": true
+    },
+    {
+      "name": "Nueva sesión recupera biblioteca y meta guardadas",
+      "expected": "Meta 12 y libro calificado 5",
+      "observed": "HTTP 200",
+      "passed": true
+    }
+  ],
+  "cleanup": [
+    {
+      "dataDeleted": true,
+      "accountDeleted": true
+    },
+    {
+      "dataDeleted": true,
+      "accountDeleted": true
+    }
+  ]
+}

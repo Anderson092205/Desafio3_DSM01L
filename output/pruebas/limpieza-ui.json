@@ -1,0 +1,17 @@
+{
+  "recordedOn": "2026-10-24",
+  "projectId": "desafio3-lecturas-261024-aem",
+  "status": "blocked_by_automatic_approval_review",
+  "scope": "^lector\\.(prueba|segundo)\\.\\d+@example\\.com$",
+  "requestedPreservedDemonstrationAccounts": 2,
+  "preservationReason": "Se solicitó conservar las dos cuentas actuales de demostración instaladas.",
+  "deletionProcessStarted": false,
+  "accountsDeleted": 0,
+  "dataBranchesDeleted": 0,
+  "remoteChangesPerformed": false,
+  "allRemoteAccountsAndDataUntouchedByThisCleanup": true,
+  "otherProjectsModified": false,
+  "blockReason": "La revisión automática rechazó borrar cuentas y ramas remotas por tratarse de una acción costosa de revertir sin autorización explícita del usuario para ese borrado exacto.",
+  "retryPerformed": false,
+  "administrativeTemporaryScriptRemoved": true
+}
